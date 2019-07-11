@@ -1,0 +1,24 @@
+server:
+   port: 13002
+spring:
+   application:
+      name: kafka-demo
+   # kafka 服务配置
+   kafka:
+      # kafka 生产端配置
+      producer:
+         bootstrap-servers: 127.0.0.1:9092
+         key-serializer: org.apache.kafka.common.serialization.StringSerializer
+         value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      #kafka 消费端配置
+      consumer:
+         enable-auto-commit: true
+         group-id: ${spring.application.name}
+         bootstrap-servers: 127.0.0.1:9092
+         auto-offset-reset: latest
+         key-serializer: org.apache.kafka.common.serialization.StringSerializer
+         value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      
+kafka:
+   topic:
+      foo: foo
