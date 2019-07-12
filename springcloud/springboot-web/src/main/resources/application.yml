@@ -1,0 +1,7 @@
+# 服务端口
+server:
+   port: 8084
+#eureka 服务id配置，服务集群中唯一识别码
+spring:
+   application:
+      name: web-demo1

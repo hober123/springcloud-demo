@@ -1,0 +1,68 @@
+spring:
+   application:
+      name: zuul-api
+eureka:
+  instance:
+    lease-expiration-duration-in-seconds: 30
+    lease-renewal-interval-in-seconds: 10
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+    instance-id: gateway-zuul
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8099/eureka/
+server:
+  port: 12009
+
+redis:
+   host: 127.0.0.1 
+   port: 6379 
+   password: test123
+   timeout: 3000 # 超时时间 lettuce:
+   pool: 
+      max-active: 200 #连接池最大连接数（使用负值表示没有限制） 
+      max-idle: 20 # 连接池中的最大空闲连接
+      min-idle: 5 #连接池中的最小空闲连接 
+      max-wait: -1 # 连接池最大阻塞等待时间（使用负值表示没有限制）
+management:
+  endpoints:
+    web:
+      exposure:
+        include: routes
+zuul:
+  ratelimit:
+      key-prefix: eureka-server  #对应用来标识请求的key的前缀
+      enabled: true
+      repository: REDIS  #对应存储类型（用来存储统计信息）
+      behind-proxy: true  #代理之后
+      default-policy: #可选 - 针对所有的路由配置的策略，除非特别配置了policies
+         limit: 1000 #可选 - 每个刷新时间窗口对应的请求数量限制
+         # quota: 1000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
+         refresh-interval: 5 # 刷新时间窗口的时间，默认值 (秒)
+         type: #可选 限流方式
+            - url
+            - user
+            - origin
+      policies:
+         eureka-server:
+            limit: 5
+            quota: 5
+            efresh-interval: 10
+  #  隐藏所有微服务名称(即使用微服务名称无法访问到服务)
+  ignored-services: "*"
+  #  服务前缀名，想要访问项目之前要加上此路径
+  prefix: /api
+  routes:
+     producer-server:
+        path: /prod/**
+        url: http://127.0.0.1:8083/producer
+        #stripPrefix: false
+     consumer-server:
+        path: /consumer/**
+        url: http://127.0.0.1:8084/consumer/
+     eureka-server:
+        path: /producer/**
+        serviceId: server-producer
+        stripPrefix: false
