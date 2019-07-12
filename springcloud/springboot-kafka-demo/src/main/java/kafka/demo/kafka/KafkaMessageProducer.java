@@ -29,8 +29,8 @@ public class KafkaMessageProducer {
         log.info("topic="+topic+",message="+message);
         ListenableFuture<SendResult<String, String>> future = kafkaTemplate.send(topic, message);
         count++;
-        future.addCallback(success -> log.info("KafkaMessageProducer 发送消息成功！"),
-                fail -> log.error("KafkaMessageProducer 发送消息失败！"));
+        future.addCallback(success -> log.info("KafkaMessageProducer 发�?�消息成功！"),
+                fail -> log.error("KafkaMessageProducer 发�?�消息失败！"));
     }
 
 }

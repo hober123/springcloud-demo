@@ -1,0 +1,24 @@
+# 服务端口
+server:
+   port: 8084
+   servlet:
+    context-path: /consumer
+#日志级别配置
+logging:
+   level:
+      root: INFO
+#eureka 服务id配置，服务集群中唯一识别码
+spring:
+   application:
+      name: server-consumer
+#注册中心配置
+eureka:
+   instance:
+     lease-expiration-duration-in-seconds: 30
+     lease-renewal-interval-in-seconds: 10
+     prefer-ip-address: true
+     ip-address: 127.0.0.1
+     instance-id: server-consumer
+   client:
+      service-url:
+         defaultZone: http://localhost:8099/eureka/
