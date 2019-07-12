@@ -1,0 +1,28 @@
+# 服务端口
+server:
+   port: 12000
+#
+spring:
+   application:
+      name: config-server
+   profiles:
+      active: native
+   cloud:
+      config:
+         server:
+            native:
+               searchLocations: D:/work/config-local
+   bus:
+      refresh:
+         enabled: true
+   # kafka 配置
+   kafka:
+      bootstrap-servers: 127.0.0.1:9092
+      consumer:
+         group-id: SpringCloud-bus
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' #refresh
