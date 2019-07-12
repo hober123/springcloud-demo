@@ -1,0 +1,120 @@
+2019-06-20 16:41:55.435 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-20 16:41:55.699 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker-Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bb0dbce5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-20 16:41:56.428 [restartedMain] INFO  demo.eureka.com.eu.ConsumerApp-No active profile set, falling back to default profiles: default
+2019-06-20 16:41:58.021 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId-Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-06-20 16:41:58.457 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope-BeanFactory id=bc5670dc-2664-31af-9335-b936765fa61b
+2019-06-20 16:41:58.601 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker-Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bb0dbce5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-20 16:41:59.638 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8084 (http)
+2019-06-20 16:41:59.660 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8084"]
+2019-06-20 16:41:59.675 [restartedMain] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2019-06-20 16:41:59.675 [restartedMain] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-06-20 16:41:59.691 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\Program Files (x86)\Common Files\NetSarang;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\wamp\bin\php\php5.5.12;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;D:\Program Files\OpenVPN\bin;d:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Python27;C:\Python27\Scripts;C:\Python27\Tools\Scripts;;C:\Program Files\Docker Toolbox;C:\Users\Ervin\AppData\Roaming\npm;C:\Users\Ervin\AppData\Local\Android\Sdk\tools;C:\Users\Ervin\AppData\Local\Android\Sdk\platform-tools;C:\Users\Ervin\AppData\Local\Android\Sdk\build-tools\28.0.0;;C:\Users\Ervin\Desktop;;.]
+2019-06-20 16:41:59.847 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/consumer]-Initializing Spring embedded WebApplicationContext
+2019-06-20 16:41:59.848 [restartedMain] INFO  org.springframework.web.context.ContextLoader-Root WebApplicationContext: initialization completed in 3381 ms
+2019-06-20 16:42:00.001 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource-No URLs will be polled as dynamic configuration sources.
+2019-06-20 16:42:00.002 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource-To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-20 16:42:00.024 [restartedMain] INFO  com.netflix.config.DynamicPropertyFactory-DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3f26654b
+2019-06-20 16:42:01.899 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demo': Unsatisfied dependency expressed through field 'helloRemote'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'demo.eureka.com.eu.service.RemoteHello' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-06-20 16:42:01.904 [restartedMain] INFO  o.s.beans.factory.support.DisposableBeanAdapter-Destroy method 'close' on bean with name 'eurekaRegistration' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2019-06-20 16:42:01.905 [restartedMain] INFO  org.apache.catalina.core.StandardService-Stopping service [Tomcat]
+2019-06-20 16:42:06.430 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener-
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-20 16:42:19.884 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter-
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field helloRemote in demo.eureka.com.eu.controller.Demo required a bean of type 'demo.eureka.com.eu.service.RemoteHello' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'demo.eureka.com.eu.service.RemoteHello' in your configuration.
+
+2019-06-20 16:46:00.870 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-20 16:46:01.124 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker-Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5a86cd5a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-20 16:46:01.692 [restartedMain] INFO  demo.eureka.com.eu.ConsumerApp-No active profile set, falling back to default profiles: default
+2019-06-20 16:46:03.121 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId-Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-06-20 16:46:03.503 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope-BeanFactory id=bc5670dc-2664-31af-9335-b936765fa61b
+2019-06-20 16:46:03.647 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker-Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5a86cd5a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-20 16:46:04.592 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8084 (http)
+2019-06-20 16:46:04.635 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8084"]
+2019-06-20 16:46:04.651 [restartedMain] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2019-06-20 16:46:04.652 [restartedMain] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-06-20 16:46:04.671 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\Program Files (x86)\Common Files\NetSarang;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\wamp\bin\php\php5.5.12;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;D:\Program Files\OpenVPN\bin;d:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Python27;C:\Python27\Scripts;C:\Python27\Tools\Scripts;;C:\Program Files\Docker Toolbox;C:\Users\Ervin\AppData\Roaming\npm;C:\Users\Ervin\AppData\Local\Android\Sdk\tools;C:\Users\Ervin\AppData\Local\Android\Sdk\platform-tools;C:\Users\Ervin\AppData\Local\Android\Sdk\build-tools\28.0.0;;C:\Users\Ervin\Desktop;;.]
+2019-06-20 16:46:04.845 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/consumer]-Initializing Spring embedded WebApplicationContext
+2019-06-20 16:46:04.846 [restartedMain] INFO  org.springframework.web.context.ContextLoader-Root WebApplicationContext: initialization completed in 3125 ms
+2019-06-20 16:46:05.001 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource-No URLs will be polled as dynamic configuration sources.
+2019-06-20 16:46:05.002 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource-To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-20 16:46:05.021 [restartedMain] INFO  com.netflix.config.DynamicPropertyFactory-DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@173421a9
+2019-06-20 16:46:06.487 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demo': Unsatisfied dependency expressed through field 'helloRemote'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'demo.eureka.com.eu.service.RemoteHello' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-06-20 16:46:06.490 [restartedMain] INFO  o.s.beans.factory.support.DisposableBeanAdapter-Destroy method 'close' on bean with name 'eurekaRegistration' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2019-06-20 16:46:06.493 [restartedMain] INFO  org.apache.catalina.core.StandardService-Stopping service [Tomcat]
+2019-06-20 16:46:06.514 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener-
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-20 16:46:06.865 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter-
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field helloRemote in demo.eureka.com.eu.controller.Demo required a bean of type 'demo.eureka.com.eu.service.RemoteHello' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'demo.eureka.com.eu.service.RemoteHello' in your configuration.
+
+2019-06-20 16:51:49.859 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-20 16:51:50.106 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker-Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2fbd4b81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-20 16:51:50.700 [restartedMain] INFO  demo.eureka.com.eu.ConsumerApp-No active profile set, falling back to default profiles: default
+2019-06-20 16:51:52.209 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId-Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-06-20 16:51:52.600 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope-BeanFactory id=2fa9d026-96b1-39b0-b35b-8cb6ef86ab50
+2019-06-20 16:51:52.780 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker-Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2fbd4b81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-20 16:51:53.805 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8084 (http)
+2019-06-20 16:51:53.827 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8084"]
+2019-06-20 16:51:53.842 [restartedMain] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2019-06-20 16:51:53.842 [restartedMain] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-06-20 16:51:53.861 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\Program Files (x86)\Common Files\NetSarang;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\wamp\bin\php\php5.5.12;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;D:\Program Files\OpenVPN\bin;d:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Python27;C:\Python27\Scripts;C:\Python27\Tools\Scripts;;C:\Program Files\Docker Toolbox;C:\Users\Ervin\AppData\Roaming\npm;C:\Users\Ervin\AppData\Local\Android\Sdk\tools;C:\Users\Ervin\AppData\Local\Android\Sdk\platform-tools;C:\Users\Ervin\AppData\Local\Android\Sdk\build-tools\28.0.0;;C:\Users\Ervin\Desktop;;.]
+2019-06-20 16:51:54.024 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/consumer]-Initializing Spring embedded WebApplicationContext
+2019-06-20 16:51:54.025 [restartedMain] INFO  org.springframework.web.context.ContextLoader-Root WebApplicationContext: initialization completed in 3300 ms
+2019-06-20 16:51:54.176 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource-No URLs will be polled as dynamic configuration sources.
+2019-06-20 16:51:54.177 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource-To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-20 16:51:54.197 [restartedMain] INFO  com.netflix.config.DynamicPropertyFactory-DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3ddda59b
+2019-06-20 16:51:55.613 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'rpcInovke': Unsatisfied dependency expressed through field 'helloRemote'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'demo.eureka.com.eu.service.RemoteHello' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-06-20 16:51:55.615 [restartedMain] INFO  o.s.beans.factory.support.DisposableBeanAdapter-Destroy method 'close' on bean with name 'eurekaRegistration' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2019-06-20 16:51:55.618 [restartedMain] INFO  org.apache.catalina.core.StandardService-Stopping service [Tomcat]
+2019-06-20 16:51:55.641 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener-
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-20 16:51:55.967 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter-
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field helloRemote in demo.eureka.com.eu.controller.RpcInovke required a bean of type 'demo.eureka.com.eu.service.RemoteHello' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'demo.eureka.com.eu.service.RemoteHello' in your configuration.
+
