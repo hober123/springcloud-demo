@@ -1,0 +1,5 @@
+# 验证本地application是否会阻止加载配置中心同名文件
+my:
+ local:
+   application: server new application yml file
+   name: config-center-new

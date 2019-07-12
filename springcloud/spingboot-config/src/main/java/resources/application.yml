@@ -1,0 +1,14 @@
+# 服务端口
+server:
+   port: 12000
+#
+spring:
+   application:
+      name: config-server
+   profiles:
+      active: native
+   cloud:
+      config:
+         server:
+            native:
+               searchLocations: D:/work/config-local
