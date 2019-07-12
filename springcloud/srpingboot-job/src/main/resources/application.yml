@@ -1,0 +1,5 @@
+spring:
+   application:
+      name: spring-fastjson
+   profiles: 
+      active: dev

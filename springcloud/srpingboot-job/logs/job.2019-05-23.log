@@ -1,0 +1,75 @@
+2019-05-23 10:02:09.066 [restartedMain] INFO  demo.springjob.com.JobApp-Starting JobApp on Ervin-PC with PID 12304 (D:\work\srpingboot-job\target\classes started by Ervin in D:\work\srpingboot-job)
+2019-05-23 10:02:09.068 [restartedMain] INFO  demo.springjob.com.JobApp-The following profiles are active: dev
+2019-05-23 10:02:09.190 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-23 10:02:09.190 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor-For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-23 10:02:10.288 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-No MyBatis mapper was found in '[demo.springjob.com]' package. Please check your configuration.
+2019-05-23 10:02:11.055 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker-Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4821ffdd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-23 10:02:11.858 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8088 (http)
+2019-05-23 10:02:11.880 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8088"]
+2019-05-23 10:02:11.987 [restartedMain] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2019-05-23 10:02:11.987 [restartedMain] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-23 10:02:12.001 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener-The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\Program Files (x86)\Common Files\NetSarang;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\wamp\bin\php\php5.5.12;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;D:\Program Files\OpenVPN\bin;d:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Python27;C:\Python27\Scripts;C:\Python27\Tools\Scripts;;C:\Program Files\Docker Toolbox;C:\Users\Ervin\AppData\Roaming\npm;C:\Users\Ervin\AppData\Local\Android\Sdk\tools;C:\Users\Ervin\AppData\Local\Android\Sdk\platform-tools;C:\Users\Ervin\AppData\Local\Android\Sdk\build-tools\28.0.0;;C:\Users\Ervin\Desktop;;.]
+2019-05-23 10:02:12.128 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2019-05-23 10:02:12.128 [restartedMain] INFO  org.springframework.web.context.ContextLoader-Root WebApplicationContext: initialization completed in 2937 ms
+2019-05-23 10:02:12.766 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler-Initializing ExecutorService 'taskScheduler'
+2019-05-23 10:02:12.986 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor-Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 10:02:13.736 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} inited
+2019-05-23 10:02:14.161 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory-Using default implementation for ThreadExecutor
+2019-05-23 10:02:14.196 [restartedMain] INFO  org.quartz.core.SchedulerSignalerImpl-Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-05-23 10:02:14.196 [restartedMain] INFO  org.quartz.core.QuartzScheduler-Quartz Scheduler v.2.2.3 created.
+2019-05-23 10:02:14.198 [restartedMain] INFO  org.quartz.simpl.RAMJobStore-RAMJobStore initialized.
+2019-05-23 10:02:14.199 [restartedMain] INFO  org.quartz.core.QuartzScheduler-Scheduler meta-data: Quartz Scheduler (v2.2.3) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-05-23 10:02:14.199 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory-Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-05-23 10:02:14.199 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory-Quartz scheduler version: 2.2.3
+2019-05-23 10:02:14.199 [restartedMain] INFO  org.quartz.core.QuartzScheduler-JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@17cfa874
+2019-05-23 10:02:14.285 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer-LiveReload server is running on port 35729
+2019-05-23 10:02:14.298 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-05-23 10:02:14.357 [restartedMain] INFO  o.s.scheduling.quartz.SchedulerFactoryBean-Starting Quartz Scheduler now
+2019-05-23 10:02:14.358 [restartedMain] INFO  org.quartz.core.QuartzScheduler-Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-05-23 10:02:14.387 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8088"]
+2019-05-23 10:02:14.421 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port(s): 8088 (http) with context path ''
+2019-05-23 10:02:14.426 [restartedMain] INFO  demo.springjob.com.JobApp-Started JobApp in 5.97 seconds (JVM running for 6.503)
+2019-05-23 10:02:15.001 [springboot-job2] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job2
+2019-05-23 10:02:15.002 [springboot-job1] INFO  demo.springjob.com.pojo.Task-当前任务task03线程名称:springboot-job1
+2019-05-23 10:02:18.001 [springboot-job3] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job3
+2019-05-23 10:02:20.001 [springboot-job1] INFO  demo.springjob.com.pojo.Task-当前任务task02线程名称:springboot-job1
+2019-05-23 10:02:20.001 [springboot-job4] INFO  demo.springjob.com.pojo.Task-当前任务task03线程名称:springboot-job4
+2019-05-23 10:02:21.001 [springboot-job2] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job2
+2019-05-23 10:02:24.001 [springboot-job5] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job5
+2019-05-23 10:02:25.001 [springboot-job6] INFO  demo.springjob.com.pojo.Task-当前任务task03线程名称:springboot-job6
+2019-05-23 10:02:27.001 [springboot-job7] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job7
+2019-05-23 10:02:30.001 [springboot-job8] INFO  demo.springjob.com.pojo.Task-当前任务task03线程名称:springboot-job8
+2019-05-23 10:02:30.002 [springboot-job2] INFO  demo.springjob.com.pojo.Task-当前任务task02线程名称:springboot-job2
+2019-05-23 10:02:30.002 [springboot-job7] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job7
+2019-05-23 10:02:33.001 [springboot-job7] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job7
+2019-05-23 10:02:35.001 [springboot-job10] INFO  demo.springjob.com.pojo.Task-当前任务task03线程名称:springboot-job10
+2019-05-23 10:02:36.001 [springboot-job3] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job3
+2019-05-23 10:02:39.001 [springboot-job3] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job3
+2019-05-23 10:02:40.001 [springboot-job1] INFO  demo.springjob.com.pojo.Task-当前任务task02线程名称:springboot-job1
+2019-05-23 10:02:40.001 [springboot-job4] INFO  demo.springjob.com.pojo.Task-当前任务task03线程名称:springboot-job4
+2019-05-23 10:02:42.001 [springboot-job7] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job7
+2019-05-23 10:02:45.001 [springboot-job8] INFO  demo.springjob.com.pojo.Task-当前任务task03线程名称:springboot-job8
+2019-05-23 10:02:45.001 [springboot-job4] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job4
+2019-05-23 10:02:48.001 [springboot-job4] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job4
+2019-05-23 10:02:50.001 [springboot-job2] INFO  demo.springjob.com.pojo.Task-当前任务task02线程名称:springboot-job2
+2019-05-23 10:02:50.001 [springboot-job4] INFO  demo.springjob.com.pojo.Task-当前任务task03线程名称:springboot-job4
+2019-05-23 10:02:51.001 [springboot-job1] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job1
+2019-05-23 10:02:54.001 [springboot-job1] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job1
+2019-05-23 10:02:55.001 [springboot-job4] INFO  demo.springjob.com.pojo.Task-当前任务task03线程名称:springboot-job4
+2019-05-23 10:02:57.002 [springboot-job9] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job9
+2019-05-23 10:03:00.001 [springboot-job5] INFO  demo.springjob.com.pojo.Task-当前任务task03线程名称:springboot-job5
+2019-05-23 10:03:00.001 [springboot-job8] INFO  demo.springjob.com.pojo.Task-当前任务task02线程名称:springboot-job8
+2019-05-23 10:03:00.003 [springboot-job6] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job6
+2019-05-23 10:03:03.001 [springboot-job6] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job6
+2019-05-23 10:03:05.001 [springboot-job10] INFO  demo.springjob.com.pojo.Task-当前任务task03线程名称:springboot-job10
+2019-05-23 10:03:06.001 [springboot-job4] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job4
+2019-05-23 10:03:09.001 [springboot-job4] INFO  demo.springjob.com.pojo.Task-当前任务task01线程名称:springboot-job4
+2019-05-23 10:03:10.001 [springboot-job9] INFO  demo.springjob.com.pojo.Task-当前任务task03线程名称:springboot-job9
+2019-05-23 10:03:10.001 [springboot-job7] INFO  demo.springjob.com.pojo.Task-当前任务task02线程名称:springboot-job7
