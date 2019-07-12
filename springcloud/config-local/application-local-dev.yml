@@ -1,0 +1,13 @@
+#服务端口
+server:
+   port: 12001
+#本地配置项
+config:
+   local:
+      application: local_dev
+my:
+ local:
+   application: center application yml file
+   name: 456
+refresh:
+  test: updateTest16
