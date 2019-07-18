@@ -1,0 +1,18 @@
+server:
+  port: 14002
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: order-service
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    sender:
+      type: kafka
+    kafka:
+      topic: zipkin
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092

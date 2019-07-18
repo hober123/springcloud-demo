@@ -1,0 +1,19 @@
+server:
+  port: 14000
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: user-service
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    sender:
+      type: kafka
+    kafka:
+      topic: zipkin
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092

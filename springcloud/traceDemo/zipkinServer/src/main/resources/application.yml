@@ -1,0 +1,32 @@
+logging:
+   level:
+      root: info
+server:
+   port: 9411
+   tomcat:
+      uri-encoding: UTF-8
+   
+spring:
+   application:
+      name: zipKin-Server
+   kafka:
+      consumer:
+         group-id: ${spring.application.name}
+#允许bean覆盖
+spring.main.allow-bean-definition-overriding: true
+#ES配置
+zipkin:
+   storage:
+      type: elasticsearch
+      elasticsearch:
+         hosts: http://127.0.0.1:9200
+         cluster: elasticsearch
+         index: zipkin
+         index-shards: 1
+         index-replicas: 1
+   collector:
+      kafka:
+         bootstrap-servers: 127.0.0.1:9092
+         zookeeper: 127.0.0.1:2181
+         topic: zipkin
+         # groupId: zipkin

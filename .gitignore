@@ -1,2 +1,14 @@
-
 /.metadata/
+key
+key.pub
+.DS_Store
+.classpath
+.project
+.settings/
+*/*/target/
+*.iml
+.idea
+*.ipr
+*.iws
+*.log
+*.class
